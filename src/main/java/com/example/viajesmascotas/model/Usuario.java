@@ -4,22 +4,22 @@ package com.example.viajesmascotas.model;
 // DEFINE MODELO DE "USUARIO"
 public class Usuario {
     //ATRIBUTOS DEL USUARIO
-    private int id;
+    private String rut;
     private String nombre;
     private String email;
     private String rol; 
 
     //CONSTRUCTOR DE LA CLASE QUE INICIALIZA LOS ATRIBUTOS DE LA CLASE
-    public Usuario(int id, String nombre, String email, String rol) {
-        this.id = id;      //ASIGNA EL ID AL USUARIO
+    public Usuario(String rut, String nombre, String email, String rol) {
+        this.rut = rut;      //ASIGNA EL ID AL USUARIO
         this.nombre = nombre; //ASIGNA EL NOMBRE AL USUARIO
-        this.email = email;
-        this.rol = rol;
+        this.email = email;   //ASIGNA EMAIL
+        this.rol = rol;      //ASIGNA ROL
     }
 
-    //METODOS GETTER PARA OBTENER LOS VALORES DE LOS ATRIBUTOS DEL USUARIO
-    public int getId() {
-        return id;   //RETURNA EL ID
+    //METODOS GETTER PARA ACCEDER A LOS VALORES DE LOS ATRIBUTOS DEL USUARIO
+    public String getRut() {
+        return rut;   //RETORNA EL RUT
     }
 
     public String getNombre() {

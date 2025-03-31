@@ -23,9 +23,9 @@ public class UsuarioController {
     public List<Usuario> getUsuarios() {
         return usuarioService.getUsuarios();
     }
-    //Trae los usuarios por su ID con sus datos correspondientes desde Service
-    @GetMapping("/{id}")
-    public Usuario getUsuarioById(@PathVariable int id) {
-        return usuarioService.getUsuarioById(id);
+    //Trae los usuarios por su RUT con sus datos correspondientes desde Service
+    @GetMapping("/{rut}")
+    public Usuario getUsuarioByRut(@PathVariable String rut) {
+        return usuarioService.getUsuarioByRut(rut);
     }
 }
